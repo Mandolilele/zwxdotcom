@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的照片展示</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <!-- 百度统计代码 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?61f6d4fdb68757307132c3e802fa8ab4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="slider mobileTop">
+            <div>
+                <div class="bgImg"></div>
+                <div class="title">
+                    <h2>我的照片展示</h2>
+                    <p><a href="http://zh.zhongweixing.com/portfolio">中文</a> | <a href="http://www.zhongweixing.com/portfolio">English</a></p>
+                </div>
+            </div>
+            <ul class="slider lazy indexSlide" id="portfolioDel">
+                <li>
+                    <div>
+                        <img class="image" data-lazy="images/banner1.jpg" alt="照片展示1" />
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img class="image" data-lazy="images/banner2.jpg" alt="照片展示2" />
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img class="image" data-lazy="images/banner3.jpg" alt="照片展示3" />
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--回到顶部-->
+    <div class="gotop gotop-fixed">
+        <a href="#top" title="回到顶部">
+            <span class="gotop-title">回到顶部</span>
+            <i class="gotop-icon fas fa-chevron-up"></i>
+        </a>
+    </div>
+    
+    <input id="linkTitle" value="index" />
+    
+    <div class="footer">
+        <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2024116814号</a>
+        <span>zhongweixing.com</span>
+        <span>|</span>
+        <span>我的照片展示</span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
