@@ -66,9 +66,9 @@ $(document).ready(function() {
     // 预加载图片
     function preloadImages() {
         var images = [
-            'images/banner1.jpg',
-            'images/banner2.jpg', 
-            'images/banner3.jpg'
+            '../images/banner1.jpg',
+            '../images/banner2.jpg', 
+            '../images/banner3.jpg'
         ];
         
         images.forEach(function(src) {
