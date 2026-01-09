@@ -1,0 +1,58 @@
+/*宽度自适应*/
+function slickInit(){
+    var  winHeight = document.documentElement.clientHeight;
+    var  winWidth = document.documentElement.clientWidth;
+    if(winWidth>414){
+        var obj=$("#linkTitle").val();
+        if(obj=="exhibition"){
+            $('.lazy').slick({
+                lazyLoad: 'ondemand',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                speed: 500,
+                variableWidth: false,
+                draggable:false
+            });
+        }else if(obj=="publications"){
+            $('.lazy').slick({
+                lazyLoad: 'ondemand',
+                slidesToShow:5,
+                slidesToScroll: 1,
+                speed: 500,
+                draggable:false
+            });
+        }else if(obj=="portfolio"){
+            $('.lazy').slick({
+                lazyLoad: 'ondemand',
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                speed: 500,
+                variableWidth:true,
+                draggable:false
+            });
+        }
+    }else{
+        var obj=$("#linkTitle").val();
+        if(obj!="index"&&obj!="portfolio"){
+             $('.lazy').slick({
+             lazyLoad: 'ondemand',
+             slidesToShow: 1,
+             slidesToScroll: 1,
+             speed: 500,
+             variableWidth: false
+             });
+        }else if(obj=="portfolio"){
+            $(".porBox").find("img").each(function(){
+               var imgPath= $(this).attr("data-lazy");
+                $(this).attr("src",imgPath);
+            })
+        }
+
+    }
+
+}
+
+/*页面刷新事件*/
+$(document).ready(function(){
+    slickInit();
+})

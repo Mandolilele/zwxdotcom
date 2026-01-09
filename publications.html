@@ -1,0 +1,209 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="天路,失落园,天玄地黄,马达加斯加影像日记,秘鲁影像日记·山巅上的乌兹托克,斯里兰卡影像日记·化相重合的瞬间,恒河系列,美国西海岸," />
+    <meta name="description" content="天路,失落园,天玄地黄,马达加斯加影像日记,秘鲁影像日记·山巅上的乌兹托克,斯里兰卡影像日记·化相重合的瞬间,恒河系列,美国西海岸," />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <title>出版-钟维兴影像</title> -->
+    <title>我的照片展示</title>
+
+    <!--360 browser -->
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="wos">
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <!--Win8 or 10 -->
+    <meta name="msapplication-TileImage" content="images/i/app.png">
+    <meta name="msapplication-TileColor" content="#e1652f">
+
+    <link rel="stylesheet" href="./assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="./assets/css/amazeui.slick.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./js/html5shiv.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script src="./assets/js/amazeui.ie8polyfill.min.js"></script>
+    <![endif]-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/amazeui.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./js/slickInit.min.js"></script>
+    <script src="./js/public.min.js"></script>
+
+    <script>
+        /*便于百度搜索引擎*/
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?61f6d4fdb68757307132c3e802fa8ab4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body><header class="am-topbar am-topbar-fixed-top wos-header blackBg header boxShadow">
+    <div class="am-container">
+        <h1 class="am-topbar-brand">
+            <a href="http://139.199.29.236">钟维兴</a>
+        </h1>
+
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-warning am-show-sm-only"
+                data-am-collapse="{target: '#collapse-head'}">
+            <span class="am-sr-only">导航切换</span>
+            <span class="am-icon-bars"></span>
+        </button>
+
+        <div class="am-collapse am-topbar-collapse nav-wrap" id="collapse-head">
+            <div class="language"><a href="http://zh.zhongweixing.com/portfolio">中文</a> | <a href="http://www.zhongweixing.com/portfolio">English</a></div>
+            <ul class="am-nav-pills topbar-nav right" id="example-one">
+                <li class=""><a href="portfolio.html">作品</a></li>
+                <li><a href="exhibitions.html">展览</a></li>
+                <li><a href="publications.html">出版</a></li>
+                <li><a href="news.html">新闻</a></li>
+                <li><a href="biography.html">简历</a></li>
+                <li onclick="n=$('.am-active').index();$(this).addClass('am-active').siblings().removeClass('am-active');"  id="contact"><a  data-am-modal="{target: '#contact-modal'}">联系我们</a></li>
+            </ul>
+            <input type="hidden"  id="dataModal"/>
+        </div>
+    </div>
+    <div class="clear"></div>
+</header>
+<!--header-->
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="contact-modal">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">Contact
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close onclick="$('#contact').removeClass('am-active');$('.am-nav').find('li').eq(n).addClass('am-active');" >
+                <i class="icon-contact_close_2x"></i>
+                <i class="icon-contact_close"></i>
+            </a>
+        </div>
+        <div class="am-modal-bd">
+            <p><span>Mobile: <b>+86(0)18982079737
+                    </b></span> <span>TEL: <b>+86（028）85170675</b></span></p>
+            <p>Email: <b class="blue">zhong.weixing@cdcim.cn</b></p>
+            <div class="icon">
+                <a  href="https://twitter.com/zhongweixing/" title="Zhong WeiXing Twitter"><i class="icon-tuite"></i></a>
+                <a  href="https://www.facebook.com/zhongweixing/" title="Zhong WeiXing Facebook"><i class="icon-facebook"></i></a>
+                <a  href="https://www.instagram.com/zhongweixing/" title="Zhong WeiXing Instagram"><i class="icon-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function activeStyle(){
+        $('#contact').removeClass('am-active');$('.am-nav').find('li').eq(n).addClass('am-active');
+    }
+</script>
+<script type="text/javascript" src="./js/navRoll.min.js"></script>
+    <style>
+        .slick-prev {
+            left: -5%;
+        }
+        .slick-next {
+            right: -5%;
+        }
+    </style>
+
+    <div class="pubBox">
+        <ul class="slider lazy am-gallery am-gallery-overlay publicationBox" >
+                        <li>
+                <a href="./publications/27">
+                    <div class="am-gallery-item image">
+                        <img data-lazy="./media/article/6f9b18b1d6ae3c9a6f7c32bfed22ccab22920575.png"  alt=""/>
+                    </div>
+                    <div class="publicationsIntro">
+                        <h3 class="">FACE TO FACE</h3>
+                        <p>出版时间：2017-10</p>
+                    </div>
+                </a>
+            </li>
+                        <li>
+                <a href="./publications/26">
+                    <div class="am-gallery-item image">
+                        <img data-lazy="./media/article/25d11d4c2c094155164957f8fcc827411440ccd2.jpg"  alt=""/>
+                    </div>
+                    <div class="publicationsIntro">
+                        <h3 class="">西海岸</h3>
+                        <p>出版时间：2017-04</p>
+                    </div>
+                </a>
+            </li>
+                        <li>
+                <a href="./publications/13">
+                    <div class="am-gallery-item image">
+                        <img data-lazy="./media/article/924fc4821d61254a95ba6e88fc7c437a47292f1d.jpg"  alt=""/>
+                    </div>
+                    <div class="publicationsIntro">
+                        <h3 class="">秘鲁影像日记·山巅上的乌兹托克</h3>
+                        <p>出版时间：2012-09</p>
+                    </div>
+                </a>
+            </li>
+                        <li>
+                <a href="./publications/12">
+                    <div class="am-gallery-item image">
+                        <img data-lazy="./media/article/156d13e0dd8d831484d196fbafc5385746e37ab0.jpg"  alt=""/>
+                    </div>
+                    <div class="publicationsIntro">
+                        <h3 class="">斯里兰卡影像日记·化相重合的瞬间</h3>
+                        <p>出版时间：2012-09</p>
+                    </div>
+                </a>
+            </li>
+                        <li>
+                <a href="./publications/11">
+                    <div class="am-gallery-item image">
+                        <img data-lazy="./media/article/a01616f10ff704d80d04b7bd3ef3240db772f026.jpg"  alt=""/>
+                    </div>
+                    <div class="publicationsIntro">
+                        <h3 class="">马达加斯加影像日记</h3>
+                        <p>出版时间：2011-08</p>
+                    </div>
+                </a>
+            </li>
+                        <li>
+                <a href="./publications/10">
+                    <div class="am-gallery-item image">
+                        <img data-lazy="./media/article/d77113f7298e56b5077ff88aeb6697baf00b6839.jpg"  alt=""/>
+                    </div>
+                    <div class="publicationsIntro">
+                        <h3 class="">天玄地黄</h3>
+                        <p>出版时间：2010-02</p>
+                    </div>
+                </a>
+            </li>
+                        <li>
+                <a href="./publications/9">
+                    <div class="am-gallery-item image">
+                        <img data-lazy="./media/article/7b41c1b399b41c9788fe918b6ac4ffedc6a80512.jpg"  alt=""/>
+                    </div>
+                    <div class="publicationsIntro">
+                        <h3 class="">失落园</h3>
+                        <p>出版时间：2008-01</p>
+                    </div>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
+        <a href="#top" title="回到顶部">
+            <span class="am-gotop-title">回到顶部</span>
+            <i class="am-gotop-icon am-icon-chevron-up"></i>
+        </a>
+    </div>
+    <input id="linkTitle" value="publications" />
+
+</body>
+</html>

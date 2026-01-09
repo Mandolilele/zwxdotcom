@@ -1,79 +1,158 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="钟维兴影像,摄影家钟维兴,钟维兴摄影,失落园
+" />
+    <meta name="description" content="钟维兴，中国摄影家协会会员、中国摄影家协会图片产业委员会专家委员。2003年开始系统性摄影艺术创作，历年来创作了《天路》、《失落园》、《天玄地黄》、《马达加斯加影像日记》、《秘鲁影像日记·山巅上的乌兹托克》、《斯里兰卡影像日记·化相重合的瞬间》、《恒河系列》、《美国西海岸》等摄影艺术作品。部分重要作品发表刊登在《中国摄影》、《像素》、《西藏人文地理》等公开发行杂志。
+" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <title>钟维兴影像
+</title> -->
     <title>我的照片展示</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <!--做个标记-->
-    <!-- 百度统计代码 -->
+
+    <!--360 browser -->
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="wos">
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <!--Win8 or 10 -->
+    <meta name="msapplication-TileImage" content="images/i/app.png">
+    <meta name="msapplication-TileColor" content="#e1652f">
+
+    <link rel="stylesheet" href="./assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="./assets/css/amazeui.slick.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./js/html5shiv.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script src="http://139.199.29.236/assets/js/amazeui.ie8polyfill.min.js"></script>
+    <![endif]-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/amazeui.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./js/slickInit.min.js"></script>
+    <script src="./js/public.min.js"></script>
+
     <script>
+        /*便于百度搜索引擎*/
         var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?61f6d4fdb68757307132c3e802fa8ab4";
+            hm.src = "//hm.baidu.com/hm.js?61f6d4fdb68757307132c3e802fa8ab4";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
 </head>
-<body>
-    <div class="container">
-        <div class="slider mobileTop">
-            <div>
-                <div class="bgImg"></div>
-                <div class="title">
-                    <h2>我的照片展示</h2>
-                    <p><a href="./zh">中文</a> | <a href="./en">English</a></p>
-                </div>
+<body><div class="am-container">
+    <div class="am-slider am-slider-default mobileTop">
+        <div>
+            <div class="bgImg"></div>
+            <div class="title">
+                <!-- <h2>ZHONG WEIXING</h2> -->
+                <h2>我的照片展示</h2>
+                <P><a href="./portfolio.html">中文</a> | <a href="./">English</a></P>
             </div>
-            <ul class="slider lazy indexSlide" id="portfolioDel">
-                <li>
-                    <div>
-                        <img class="image" data-lazy="images/banner1.jpg" alt="照片展示1" />
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img class="image" data-lazy="images/banner2.jpg" alt="照片展示2" />
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img class="image" data-lazy="images/banner3.jpg" alt="照片展示3" />
-                    </div>
-                </li>
-            </ul>
         </div>
+        <ul class="slider lazy am-slides indexSlide" id="portfolioDel">
+            
+            <li>
+                <div>
+                    <img class="image" data-lazy="./media/banner/9779fd038e692e6a7f31dc1d20d73afc47d9d97b.jpg" />
+                </div>
+            </li>
+            
+            <li>
+                <div>
+                    <img class="image" data-lazy="./media/banner/52269a61497129b2d7253a13e0de802c9538d5f4.jpg" />
+                </div>
+            </li>
+            
+            <li>
+                <div>
+                    <img class="image" data-lazy="./media/banner/3c20b621577a7d4767ec598962399359993f90e2.jpg" />
+                </div>
+            </li>
+                    </ul>
     </div>
+</div>
 
     <!--回到顶部-->
-    <div class="gotop gotop-fixed">
+    <div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
         <a href="#top" title="回到顶部">
-            <span class="gotop-title">回到顶部</span>
-            <i class="gotop-icon fas fa-chevron-up"></i>
+            <span class="am-gotop-title">回到顶部</span>
+            <i class="am-gotop-icon am-icon-chevron-up"></i>
         </a>
     </div>
-    
     <input id="linkTitle" value="index" />
-    
-    <div class="footer">
-        <div class="contact-info">
-            <p>Mobile: +86(0)18982079737</p>
-            <p>TEL: +86（028）85170675</p>
-            <p>Email: zhong.weixing@cdcim.cn</p>
-        </div>
-        <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2024116814号</a>
-        <span>zhongweixing.com</span>
-        <span>|</span>
-        <span>我的照片展示</span>
-    </div>
+<div style="display: flex;line-height: 40px;font-size: 13px;position: fixed;bottom: 0;left: 0;right: 0;justify-content: center;color: #fff;z-index: 99;">
+	<a href="https://beian.miit.gov.cn/" target="_blank" style="color: #fff;">蜀ICP备2024116814号</a>
+	<span style="margin-left: 20px;">zhongweixing.com</span>
+	<span style="padding:0 10px;">|</span>
+	<span style="">我的照片展示</span>
+</div>
+<script>
+    /*轮播图配置*/
+    $('.lazy').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:true,
+        autoplaySpeed: 5000,
+        pauseOnHover: false,
+        speed: 500,
+        arrows: false,
+        fade: true
+    });
 
-    <script src="js/script.js"></script>
+</script>
+<script>
+    /*图片宽高适应*/
+    var _w = parseInt($(window).width());//获取浏览器的宽度
+    var _h = parseInt($(window).height());//获取浏览器的宽度
+    function indexImg(){
+        var titleH=$(".title h2").height();
+        var titleP=$(".title p").height();
+        if(_w<=640) {
+            var  hTop=parseInt((_h - titleH-20)/2);
+            var  pTop=parseInt((_h - titleP+50)/2);
+            $(".title h2").css("top",hTop);
+            $(".title p").css("top",pTop);
+            $("#portfolioDel div").css({
+                "width":'100%',
+                "height":"auto"
+            })
+        }else{
+            var  hTop=parseInt((_h - titleH-50)/2);
+            var  pTop=parseInt((_h - titleP+50)/2);
+            $(".title h2").css("top",hTop);
+            $(".title p").css("top",pTop);
+            $("#portfolioDel div").css({
+                "height":_h
+            })
+        }
+
+    }
+
+    $(function(){
+        indexImg();
+    });
+    $(window).resize(function() {
+        indexImg();
+    })
+
+
+</script>
 </body>
 </html>

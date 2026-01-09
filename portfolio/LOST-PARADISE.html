@@ -1,0 +1,194 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <title></title> -->
+    <title>我的照片展示</title>
+
+    <!--360 browser -->
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="wos">
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <!--Win8 or 10 -->
+    <meta name="msapplication-TileImage" content="images/i/app.png">
+    <meta name="msapplication-TileColor" content="#e1652f">
+
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="../assets/css/amazeui.slick.min.css">
+    <link rel="stylesheet" href="../css/style.min.css">
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../js/html5shiv.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script src="../assets/js/amazeui.ie8polyfill.min.js"></script>
+    <![endif]-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/amazeui.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../js/public.min.js"></script>
+
+    <script>
+        /*便于百度搜索引擎*/
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?61f6d4fdb68757307132c3e802fa8ab4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body><style>
+    .slick-prev, .slick-next {
+        width: 10%;
+        right:20px;
+    }
+    .slick-prev{
+        width: 10%;
+        left:20px;
+    }
+</style>
+
+<!--返回上一页-->
+
+<div class="am-container">
+    <div class="am-slider am-container">
+        <ul class="slider lazy portfolioSiles" id="portfolioDel">
+                        <li>
+                <div>
+                    <img class="image" data-lazy="../media/gallery/4/dc71f45195869b13a76646ef854ea5f2.jpg" />
+                </div>
+                            </li>
+                        <li>
+                <div>
+                    <img class="image" data-lazy="../media/gallery/4/75f686694a859918aaef058f4d2337b1.jpg" />
+                </div>
+                            </li>
+                        <li>
+                <div>
+                    <img class="image" data-lazy="../media/gallery/4/12da0a8a1f0014a8c412b96618f11a8e.jpg" />
+                </div>
+                            </li>
+                        <li>
+                <div>
+                    <img class="image" data-lazy="../media/gallery/4/c3815f30f5fe1fc8a4b57c402f62c793.jpg" />
+                </div>
+                            </li>
+                        <li>
+                <div>
+                    <img class="image" data-lazy="../media/gallery/4/40d4e659cbffab353a366c9c7bd463c8.jpg" />
+                </div>
+                            </li>
+                        <li>
+                <div>
+                    <img class="image" data-lazy="../media/gallery/4/50c62b2147a53385c373f4e31d6d12af.jpg" />
+                </div>
+                            </li>
+                        <li>
+                <div>
+                    <img class="image" data-lazy="../media/gallery/4/aab87bbac67f1d590184bed3a856c792.jpg" />
+                </div>
+                            </li>
+                        <li>
+                <div>
+                    <img class="image" data-lazy="../media/gallery/4/7f786113ed119f0c0a464760d96cb587.jpg" />
+                </div>
+                            </li>
+                        <li>
+                <div>
+                    <img class="image" data-lazy="../media/gallery/4/066b903c867b85123ba7e53d749b581f.jpg" />
+                </div>
+                            </li>
+                        <li>
+                <div>
+                    <img class="image" data-lazy="../media/gallery/4/5440c43d8edcefb8fe8373a91caef35e.jpg" />
+                </div>
+                            </li>
+                    </ul>
+        <div class="item">
+            <span class="nowItem">1</span>/<span class="allItem">10</span>
+        </div>
+    </div>
+</div>
+<!--回到顶部-->
+<div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
+    <a href="#top" title="回到顶部">
+        <span class="am-gotop-title">回到顶部</span>
+        <i class="am-gotop-icon am-icon-chevron-up"></i>
+    </a>
+</div>
+<input id="linkTitle" value="portfolioDetail" />
+<script>
+    var  winWidth = document.documentElement.clientWidth;
+    if(winWidth>414) {
+        /*轮播图配置*/
+        $('.slider').slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500
+        });
+    }else {
+        $('.slider').slick({
+            lazyLoad: 'progressive',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500
+        });
+    }
+
+    $(function(){
+        var  windowH = parseInt($(window).height());
+        $("#portfolioDel").height(windowH);
+
+        var len=parseInt($(".allItem").text());
+        $(".allItem").text(len);
+        $(".slick-next").click(function(){
+            var nowVal=parseInt($(".nowItem").text())+1;
+            if(nowVal-len<=0){
+                $(".nowItem").text(nowVal);
+            }else{
+                $(".nowItem").text(1);
+            }
+        });
+        $(".slick-prev").click(function(){
+            var nowVal=parseInt($(".nowItem").text())-1;
+            if(nowVal==0){
+                $(".nowItem").text(len);
+            }else{
+                $(".nowItem").text(nowVal);
+            }
+        });
+
+        $(".lazy").on("swipe",function(){
+            var liHeight=$(".slick-current").height();
+            $(".slick-track").css({
+                "max-height":liHeight,
+                "overflow":"hidden"
+            });
+        })
+    })
+
+
+
+
+</script>
+
+
+</body>
+</html>
+
+
