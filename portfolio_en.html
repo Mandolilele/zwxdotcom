@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="天路,失落园,天玄地黄,马达加斯加影像日记,秘鲁影像日记·山巅上的乌兹托克,斯里兰卡影像日记·化相重合的瞬间,恒河系列,美国西海岸" />
-    <meta name="description" content="历年作品：《天路》、《失落园》、《天玄地黄》、《马达加斯加影像日记》、《秘鲁影像日记·山巅上的乌兹托克》、《斯里兰卡影像日记·化相重合的瞬间》、《恒河系列》、《美国西海岸》" />
+    <meta name="keywords" content="Zhong Weixing,Photography Portfolio,Chinese Photography,Art Photography" />
+    <meta name="description" content="Portfolio of Zhong Weixing's photographic works, including series such as Lost Paradise, Obscure Sky with Yellow Land, Madagascar Photo Diary, and other artistic photography projects." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <title>作品-钟维兴影像</title> -->
-    <title>我的照片展示</title>
+    <!-- <title>钟维兴影像
+</title> -->
+    <title>Portfolio - Zhong Weixing Photography</title>
 
     <!--360 browser -->
     <meta name="renderer" content="webkit">
@@ -22,24 +23,24 @@
     <meta name="msapplication-TileImage" content="images/i/app.png">
     <meta name="msapplication-TileColor" content="#e1652f">
 
-    <link rel="stylesheet" href="http://139.199.29.236/assets/css/amazeui.min.css">
-    <link rel="stylesheet" href="http://139.199.29.236/assets/css/amazeui.slick.min.css">
-    <link rel="stylesheet" href="http://139.199.29.236/css/style.min.css">
+    <link rel="stylesheet" href="./assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="./assets/css/amazeui.slick.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 
     <!--[if (gte IE 9)|!(IE)]><!-->
-    <script src="http://139.199.29.236/assets/js/jquery.min.js"></script>
-    <script src="http://139.199.29.236/js/html5shiv.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./js/html5shiv.min.js"></script>
     <!--<![endif]-->
     <!--[if lte IE 8 ]>
     <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-    <script src="http://139.199.29.236/assets/js/amazeui.ie8polyfill.min.js"></script>
+    <script src="./assets/js/amazeui.ie8polyfill.min.js"></script>
     <![endif]-->
-    <script src="http://139.199.29.236/assets/js/jquery.min.js"></script>
-    <script src="http://139.199.29.236/assets/js/amazeui.min.js"></script>
-    <script src="http://139.199.29.236/assets/js/slick.min.js"></script>
-    <script src="http://139.199.29.236/js/slickInit.min.js"></script>
-    <script src="http://139.199.29.236/js/public.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/amazeui.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./js/slickInit.min.js"></script>
+    <script src="./js/public.min.js"></script>
 
     <script>
         /*便于百度搜索引擎*/
@@ -55,7 +56,7 @@
 <body><header class="am-topbar am-topbar-fixed-top wos-header blackBg header boxShadow">
     <div class="am-container">
         <h1 class="am-topbar-brand">
-            <a href="http://139.199.29.236">钟维兴</a>
+            <a href="./">钟维兴</a>
         </h1>
 
         <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-warning am-show-sm-only"
@@ -65,14 +66,14 @@
         </button>
 
         <div class="am-collapse am-topbar-collapse nav-wrap" id="collapse-head">
-            <div class="language"><a href="http://zh.zhongweixing.com/portfolio">中文</a> | <a href="http://www.zhongweixing.com/portfolio">English</a></div>
+            <div class="language"><a href="portfolio.html">中文</a> | <a href="portfolio_en.html">English</a></div>
             <ul class="am-nav-pills topbar-nav right" id="example-one">
-                <li class=""><a href="http://139.199.29.236/portfolio">作品</a></li>
-                <li><a href="http://139.199.29.236/exhibitions">展览</a></li>
-                <li><a href="http://139.199.29.236/publications">出版</a></li>
-                <li><a href="http://139.199.29.236/news">新闻</a></li>
-                <li><a href="http://139.199.29.236/biography">简历</a></li>
-                <li onclick="n=$('.am-active').index();$(this).addClass('am-active').siblings().removeClass('am-active');"  id="contact"><a  data-am-modal="{target: '#contact-modal'}">联系我们</a></li>
+                <li class=""><a href="portfolio_en.html">Works</a></li>
+                <li><a href="exhibitions_en.html">Exhibitions</a></li>
+                <li><a href="publications_en.html">Publications</a></li>
+                <li><a href="news_en.html">News</a></li>
+                <li><a href="biography_en.html">Biography</a></li>
+                <li onclick="n=$('.am-active').index();$(this).addClass('am-active').siblings().removeClass('am-active');"  id="contact"><a  data-am-modal="{target: '#contact-modal'}">Contact</a></li>
             </ul>
             <input type="hidden"  id="dataModal"/>
         </div>
@@ -100,12 +101,30 @@
         </div>
     </div>
 </div>
-<script>
-    function activeStyle(){
-        $('#contact').removeClass('am-active');$('.am-nav').find('li').eq(n).addClass('am-active');
-    }
-</script>
-<script type="text/javascript" src="http://139.199.29.236/js/navRoll.min.js"></script>
+
+    <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">
+                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+            </div>
+            <div class="am-modal-bd">
+                <p><span>Mobile: <b>+86(0)18982079737
+                    </b></span> <span>TEL: <b>+86（028）85170675</b></span></p>
+                <p>Email: <b class="blue">zhong.weixing@cdcim.cn</b></p>
+                <div class="icon">
+                    <a  href="https://twitter.com/zhongweixing/" title="Zhong WeiXing Twitter"><i class="icon-tuite"></i></a>
+                    <a  href="https://www.facebook.com/zhongweixing/" title="Zhong WeiXing Facebook"><i class="icon-facebook"></i></a>
+                    <a  href="https://www.instagram.com/zhongweixing/" title="Zhong WeiXing Instagram"><i class="icon-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function activeStyle(){
+            $('#contact').removeClass('am-active');$('.am-nav').find('li').eq(n).addClass('am-active');
+        }
+    </script>
+    <script type="text/javascript" src="./js/navRoll.min.js"></script>
     <style>
         .slick-prev {
             left: -5%;
@@ -120,8 +139,8 @@
         <ul class="slider lazy am-gallery am-gallery-overlay">
                         <li>
                 <div class="am-gallery-item image">
-                    <a href="http://139.199.29.236/portfolio/Portraits-Of-Contemporary-Masters-Of-Photography">
-                        <img data-lazy="http://139.199.29.236/media/gallery/cover/27035501c897268b5b378f544bd52dbe8287a695.jpg"  alt=""/>
+                    <a href="./portfolio/Portraits-Of-Contemporary-Masters-Of-Photography_en.html">
+                        <img data-lazy="./media/gallery/cover/27035501c897268b5b378f544bd52dbe8287a695.jpg"  alt=""/>
                         <div class="am-gallery-title">
                             <h3>当代摄影大师</h3>
                         </div>
@@ -130,8 +149,8 @@
             </li>
                         <li>
                 <div class="am-gallery-item image">
-                    <a href="http://139.199.29.236/portfolio/Peru-photographic-travelogue-Woodstock-on-the-Summit">
-                        <img data-lazy="http://139.199.29.236/media/gallery/cover/974bf9bffeb2f08a439a46d44c7c613086dff4cb.jpg"  alt=""/>
+                    <a href="./portfolio/Peru-photographic-travelogue-Woodstock-on-the-Summit_en.html">
+                        <img data-lazy="./media/gallery/cover/974bf9bffeb2f08a439a46d44c7c613086dff4cb.jpg"  alt=""/>
                         <div class="am-gallery-title">
                             <h3>秘鲁影像日记·山巅上的伍兹托克</h3>
                         </div>
@@ -140,8 +159,8 @@
             </li>
                         <li>
                 <div class="am-gallery-item image">
-                    <a href="http://139.199.29.236/portfolio/ARI-LANKA-Photographic-Travelogue-A-Momentare-Reincarnation">
-                        <img data-lazy="http://139.199.29.236/media/gallery/cover/53e32739bca3bf7576f6b095c790568f0e6a7a3a.jpg"  alt=""/>
+                    <a href="./portfolio/ARI-LANKA-Photographic-Travelogue-A-Momentare-Reincarnation_en.html">
+                        <img data-lazy="./media/gallery/cover/53e32739bca3bf7576f6b095c790568f0e6a7a3a.jpg"  alt=""/>
                         <div class="am-gallery-title">
                             <h3>斯里兰卡影像日记·化相重合的瞬间</h3>
                         </div>
@@ -150,8 +169,8 @@
             </li>
                         <li>
                 <div class="am-gallery-item image">
-                    <a href="http://139.199.29.236/portfolio/Madagascar-Photographic-Travelogue">
-                        <img data-lazy="http://139.199.29.236/media/gallery/cover/c04a055aa1d8c13dcc977333fd160bb47f688e15.jpg"  alt=""/>
+                    <a href="./portfolio/Madagascar-Photographic-Travelogue_en.html">
+                        <img data-lazy="./media/gallery/cover/c04a055aa1d8c13dcc977333fd160bb47f688e15.jpg"  alt=""/>
                         <div class="am-gallery-title">
                             <h3>马达加斯加影像日记</h3>
                         </div>
@@ -160,8 +179,8 @@
             </li>
                         <li>
                 <div class="am-gallery-item image">
-                    <a href="http://139.199.29.236/portfolio/Obscure-Sky-With-Yellow-Land">
-                        <img data-lazy="http://139.199.29.236/media/gallery/cover/1775db3e07d9461d8a2e7f37e7bf0d4bd32d848b.jpg"  alt=""/>
+                    <a href="./portfolio/Obscure-Sky-With-Yellow-Land_en.html">
+                        <img data-lazy="./media/gallery/cover/1775db3e07d9461d8a2e7f37e7bf0d4bd32d848b.jpg"  alt=""/>
                         <div class="am-gallery-title">
                             <h3>天玄地黄</h3>
                         </div>
@@ -170,8 +189,8 @@
             </li>
                         <li>
                 <div class="am-gallery-item image">
-                    <a href="http://139.199.29.236/portfolio/LOST-PARADISE">
-                        <img data-lazy="http://139.199.29.236/media/gallery/cover/830b793f0ed4464bbfd679a40ae9a5d304ec3852.jpg"  alt=""/>
+                    <a href="./portfolio/LOST-PARADISE_en.html">
+                        <img data-lazy="./media/gallery/cover/830b793f0ed4464bbfd679a40ae9a5d304ec3852.jpg"  alt=""/>
                         <div class="am-gallery-title">
                             <h3>失落园</h3>
                         </div>
